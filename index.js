@@ -18,6 +18,7 @@ const inquirer =require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
+// First create a NEW function(textInput)--> THEN when the function actually runs--> inquirer will prompt the user with the following questions
 function textInput(){
     return inquirer.prompt([
         {
@@ -73,15 +74,16 @@ function textInput(){
         },
     ]);
 };
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.appendFile(`${fileName}.md`, data, 
-    (err) => err ? console.error(err) : console.log(`${fileName}.md has been generated.`))
+    fs.appendFile(`${fileName}.md`, data, (err) => 
+    err ? console.error(err) : console.log(`${fileName}.md has been generated.`)
+    );
 }
 
 // TODO: Create a function to initialize app
-// await:
-// async: 
+// async/await: returns a promise--> runs the textInput function--> 
 async function init() {
     let answers = await textInput();
     writeToFile((answers.fileName),(generateMarkdown(answers)));
