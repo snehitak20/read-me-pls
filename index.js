@@ -81,7 +81,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 async function init() {
-    let answers = await userInput();
+    let answers = await textInput();
     writeToFile((answers.fileName),(generateMarkdown(answers)));
 }
 
