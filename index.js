@@ -49,7 +49,7 @@ function textInput(){
             type: 'list',
             message: 'Select the kind of license needed for this application.',
             name: 'license', 
-            choices: ['Apache 2.0', 'GPL License', 'MIT', 'None'],
+            choices: ['Apache 2.0', 'GPL License', 'MIT'],
         }, 
         {
             type: 'input', 
@@ -80,6 +80,8 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
+// await:
+// async: 
 async function init() {
     let answers = await textInput();
     writeToFile((answers.fileName),(generateMarkdown(answers)));
