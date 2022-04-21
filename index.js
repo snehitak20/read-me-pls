@@ -83,7 +83,7 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-// async/await: returns a promise--> runs the textInput function--> 
+// async/await: returns a promise--> await literally says WAIT, do not do anythin until  it runs the textInput function first--> appends the results of that function to the new file in the format of the generatemarkdown file.
 async function init() {
     let answers = await textInput();
     writeToFile((answers.fileName),(generateMarkdown(answers)));
