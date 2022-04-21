@@ -50,7 +50,7 @@ function textInput() {
             type: 'list',
             message: 'Select the kind of license needed for this application.',
             name: 'license', 
-            choices: ['Apache 2.0', 'GPL License', 'MIT'],
+            choices: ['Apache 2.0', 'GNU GPL v3', 'ISC', 'MIT'],
         }, 
         {
             type: 'input', 
