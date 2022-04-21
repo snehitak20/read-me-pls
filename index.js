@@ -28,7 +28,7 @@ function textInput() {
         },
         {
             type: 'input', 
-            message: 'What is the title of your application?',
+            message: 'What is the title of your application? (Also the title of your ReadMe)',
             name: 'fileName',
         },
         {
@@ -71,11 +71,6 @@ function textInput() {
             type: 'input', 
             message: 'What is your email address?',
             name: 'email', 
-        },
-        {
-            type: 'input',
-            message: 'What is the title of your new ReadMe file?',
-            name: 'title',
         },
     ]);
 };
