@@ -14,12 +14,12 @@
 // NEW README: call it generate.md 
 
 // TODO: Include packages needed for this application
-const inquirer =require('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 // First create a NEW function(textInput)--> THEN when the function actually runs--> inquirer will prompt the user with the following questions
-function textInput(){
+function textInput() {
     return inquirer.prompt([
         {
             type: 'input',
@@ -71,6 +71,11 @@ function textInput(){
             type: 'input', 
             message: 'What is your email address?',
             name: 'email', 
+        },
+        {
+            type: 'input',
+            message: 'What is the title of your new ReadMe file?',
+            name: 'title',
         },
     ]);
 };
