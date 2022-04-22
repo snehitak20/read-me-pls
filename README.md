@@ -4,7 +4,11 @@
 
 The purpose of this project is to build a README generator. This is to help developers put together a quick README so that they can get back to developing new products. The README that is generated using this project contains the following: a title that is representative of the application, a short description, installation, usage, license and license explanation, contributors, and a contact section with links to the developer's profile and email address. This new README is generated entirely via the command line.
 
-The star of this prject would be the use of the Inquirer package within Node.js. Additionally, running the command `node index.js` is what pulls ups the questions to generate the README file that is created. 
+The star of this project would be the use of the Inquirer package within Node.js. Additionally, running the command `node index.js` is what pulls up the questions to generate the README file that is created. 
+
+[![Terminal Gif](./assets/README%20Generator.gif)](https://drive.google.com/file/d/1KcsMlP-WVluirK7q1PVPtl_KmYrTpVq7/view "video")
+
+
 
 ## Technologies Used
 
@@ -13,7 +17,7 @@ The star of this prject would be the use of the Inquirer package within Node.js.
 
 ## Usage
 
-To generate a new README, open up Terminal and run the command `node index.js`. This will prompt the user to answer a series of questions which will populate the appropriate fields within the generated README.
+To generate a new README, open up Terminal and run the command `node index.js`. This will prompt the user to answer a series of questions which will populate the appropriate fields within the generated README. Click the video above to access the Google Drive link. 
 
 ## Installation
 
